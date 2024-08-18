@@ -1,0 +1,170 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+.header {
+    background-color: #add8e6;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #000;
+}
+
+.header h2 {
+    color: #ff6347;
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Username section styling */
+.username {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
+}
+
+.username h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+/* Container for the buttons and input field */
+.row form {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds space between the input and buttons */
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    color: #fff;
+    background-color: #000;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button#connect {
+    background-color: #007bff;
+    color: #fff;
+}
+
+button#disconnect {
+    background-color: #ccc;
+    color: #333;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Online status message */
+#online p {
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* Container for the messages section */
+.messages, .members {
+    border: 2px solid #000; /* Consistent border with other components */
+    border-radius: 8px; /* Rounded corners to match styling */
+    padding: 10px; /* Inner padding for spacing */
+    margin: 10px auto; /* Center the component with spacing */
+    max-width: 600px; /* Consistent width with other sections */
+    background-color: #f1f1f1; /* Light background color */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Conversation container inside messages */
+#conversation {
+    margin-top: 10px;
+    font-size: 0.8em;
+    text-align: left;
+}
+
+/* Table styling */
+table {
+    width: 100%; /* Full width table */
+    border-collapse: collapse; /* Collapse borders for clean look */
+}
+
+thead th {
+    text-align: left;
+    font-size: 18px;
+    color: #333; /* Darker color for the heading */
+    padding-bottom: 10px; /* Space below the heading */
+}
+
+tbody {
+    color: #333; /* Standard color for message text */
+}
+
+/* Styling each message row */
+tbody tr {
+    padding: 8px;
+    border-bottom: 1px solid #ddd; /* Border between messages */
+}
+
+/* Alternating background color for rows */
+tbody tr:nth-child(odd) {
+    background-color: #fafafa; /* Light grey for odd rows */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff; /* White for even rows */
+}
+
+tbody tr.private {
+    color: blueviolet;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style list items inside #members */
+#userslist li {
+    padding: 8px;
+    border: 1px solid #ddd; /* Optional: adds a border to list items */
+    transition: background-color 0.3s ease; /* Smooth transition for color changes */
+}
+
+/* Hover state for li inside #members */
+#userslist li:hover {
+    background-color: #dedddd; /* Change this to your desired hover color */
+}
+
+/* Click (active) state for li inside #members */
+#userslist li.selected {
+    background-color: #77b0a9; /* Change this to your desired click color */
+}
