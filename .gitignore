@@ -32,6 +32,7 @@ build/
 **/gradle
 !**/src/main/**/build/
 !**/src/test/**/build/
+**/gradlew**
 
 ### STS ###
 .apt_generated
